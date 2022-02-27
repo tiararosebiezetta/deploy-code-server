@@ -4,6 +4,8 @@ services:
     build: .
     container_name: code-server
     environment:
+      - PUID=0 # for root access
+      - PGID=0 # for root access
       - PASSWORD=value
       - GIT_REPO=value
       - RCLONE_DATA=value
