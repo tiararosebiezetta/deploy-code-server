@@ -5,6 +5,8 @@ services:
     container_name: code-server
     environment:
       - PASSWORD=value
+      - PUID=0
+      - PGID=0
     ports:
       - 8080:8080
     restart: unless-stopped
