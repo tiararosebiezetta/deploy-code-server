@@ -5,10 +5,6 @@ services:
     container_name: code-server
     environment:
       - PASSWORD=value
-      - GIT_REPO=value
-      - RCLONE_DATA=value
-      - etc=etc
-      - etc=etc
     ports:
       - 8080:8080
     restart: unless-stopped
